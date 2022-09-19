@@ -3,10 +3,11 @@ body {
 }
 
 .container {
-  margin-left: 31%;
-  margin-top: 50px;
-  width: 460px;
-  height: 450px;
+  /* margin-left: 31%;
+  margin-top: 50px; */
+  margin-top: 15%;
+  width: auto;
+  height: auto;
   color: aqua;
   text-align: center;
   font-size: 30px;
@@ -16,7 +17,7 @@ body {
   height: 150px;
   font-size: 100px;
   border: #ffe750 2px solid;
-  /* padding-left: 50px; */
+  font-size: 95px;
   text-align: center;
   color: #f4fd71;
 }
@@ -25,4 +26,27 @@ body {
   text-align: center;
   margin-top: 50px;
   color: #ffe750;
+}
+
+@media screen and (max-width: 480px) {
+  .pole {
+    width: 135px;
+    height: 135px;
+    font-size: 85px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .pole {
+    width: 115px;
+    height: 115px;
+    font-size: 72px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .pole {
+    width: 100px;
+    height: 100px;
+    font-size: 63px;
+  }
 }
