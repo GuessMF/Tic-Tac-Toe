@@ -1,11 +1,20 @@
+/* html {
+  height: 100%;
+} */
+
 body {
   background-color: #0a7b9f;
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  touch-action: manipulation;
 }
 
 .container {
   /* margin-left: 31%;
   margin-top: 50px; */
-  margin-top: 10%;
+  margin-top: 5%;
   width: auto;
   height: auto;
   color: aqua;
@@ -24,8 +33,18 @@ body {
 
 .header {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   color: #ffe750;
+}
+
+.footer {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.githubLogo {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (max-width: 480px) {
@@ -33,6 +52,9 @@ body {
     width: 135px;
     height: 135px;
     font-size: 85px;
+  }
+  .footer {
+    margin-top: 50%;
   }
 }
 @media screen and (max-width: 430px) {
@@ -48,5 +70,17 @@ body {
     width: 100px;
     height: 100px;
     font-size: 63px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
 }
