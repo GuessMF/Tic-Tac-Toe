@@ -4,7 +4,6 @@ start(squares);
 function start(squares) {
   let y = 0;
   let show = document.getElementById("table");
-
   for (let square of squares) {
     square.addEventListener("click", function click() {
       this.textContent = ["x", "o"][y % 2];
@@ -12,10 +11,14 @@ function start(squares) {
       y++;
       if (isVictory(squares) && this.textContent == "x") {
         show.textContent = "Победил игрок 1";
+        // setTimeout(location.reload(), 3000);
+        setTimeout(window.location.reload.bind(window.location), 1000);
       } else if (isVictory(squares) && this.textContent == "o") {
         show.textContent = "Победил игрок 2";
+        setTimeout(window.location.reload.bind(window.location), 1000);
       } else if (y == 9) {
         show.textContent = "Ничья";
+        setTimeout(window.location.reload.bind(window.location), 1000);
       }
     });
   }
